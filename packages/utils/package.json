@@ -1,5 +1,5 @@
 {
-  "name": "@memorja/database",
+  "name": "@memorja/utils",
   "version": "0.1.0",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -8,20 +8,16 @@
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts",
     "dev": "tsup src/index.ts --format esm,cjs --dts --watch",
-    "lint": "eslint src --ext .ts",
-    "test": "vitest run",
-    "migrate": "node migrate.js"
+    "lint": "eslint src --ext .ts"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.39.0",
-    "pg": "^8.11.3"
+    "crypto-js": "^4.2.0",
+    "date-fns": "^2.30.0"
   },
   "devDependencies": {
-    "@memorja/config": "*",
+    "@types/crypto-js": "^4.2.1",
     "@types/node": "^20.10.4",
-    "@types/pg": "^8.10.9",
     "tsup": "^8.0.1",
-    "typescript": "^5.3.3",
-    "vitest": "^0.34.6"
+    "typescript": "^5.3.3"
   }
 }
