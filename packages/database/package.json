@@ -9,7 +9,6 @@
     "build": "tsup src/index.ts --format esm,cjs --dts",
     "dev": "tsup src/index.ts --format esm,cjs --dts --watch",
     "lint": "eslint src --ext .ts",
-    "test": "vitest run",
     "migrate": "node migrate.js"
   },
   "dependencies": {
@@ -17,11 +16,18 @@
     "pg": "^8.11.3"
   },
   "devDependencies": {
-    "@memorja/config": "*",
     "@types/node": "^20.10.4",
     "@types/pg": "^8.10.9",
     "tsup": "^8.0.1",
-    "typescript": "^5.3.3",
-    "vitest": "^0.34.6"
+    "typescript": "^5.3.3"
+  },
+  "tsup": {
+    "dts": true,
+    "splitting": false,
+    "sourcemap": true,
+    "clean": true,
+    "treeshake": true,
+    "format": ["esm", "cjs"],
+    "tsconfig": "tsconfig.json"
   }
 }

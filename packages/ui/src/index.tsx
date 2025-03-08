@@ -1,7 +1,3 @@
-// Re-export UI components
-export { Button } from './Button';
-
-// Basic Button component
 import React from 'react';
 
 export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
