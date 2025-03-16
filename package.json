@@ -1,0 +1,53 @@
+{
+  "name": "memorja",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.4.1",
+  "devDependencies": {
+    "@playwright/test": "^1.51.0",
+    "@tailwindcss/postcss": "^4.0.13",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.2.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/chrome": "^0.0.309",
+    "@types/node": "^22.13.10",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "@vitest/ui": "^3.0.8",
+    "autoprefixer": "^10.4.21",
+    "jsdom": "^26.0.0",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.0.13",
+    "tailwindcss-animate": "^1.0.7",
+    "typescript": "^5.8.2",
+    "vite": "^6.2.1",
+    "vite-plugin-static-copy": "^2.3.0",
+    "vitest": "^3.0.8"
+  },
+  "dependencies": {
+    "@radix-ui/react-slot": "^1.1.2",
+    "@tanstack/react-query": "^5.67.3",
+    "@trpc/client": "11.0.0-rc.828",
+    "@trpc/react-query": "11.0.0-rc.828",
+    "@trpc/server": "11.0.0-rc.828",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "hono": "^4.7.4",
+    "lucide-react": "^0.479.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwind-merge": "^3.0.2",
+    "zod": "^3.24.2"
+  }
+}
